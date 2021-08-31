@@ -51,6 +51,14 @@ cd catkin/src
 # Make sure you are in your catkin_ws, not src
 catkin_make -DCMAKE_BUILD_TYPE=Release
 ```
+#Get either the DBoW2 or FoW feature vocabulary from 
+https://github.com/OpenVSLAM-Community/DBoW2_orb_vocab
+or
+https://github.com/OpenVSLAM-Community/FBoW_orb_vocab
+and put it in the folder 
+/OpenREALM_ROS1_Bridge/realm_ros/profiles/{name_of_the_profile}/pose_estimation/method/{subfolder_for_specific_SLAM, e.g. "open_vslam"}
+
+
 
 ## Quick Start
 
