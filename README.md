@@ -104,3 +104,13 @@ roslaunch realm_ros alexa_noreco.launch
 ```sh
 roslaunch realm_ros alexa_reco.launch
 ```
+
+- 2.5D mapping with visual SLAM and surface reconstruction using the direct ROS interface:
+```sh
+roslaunch realm_ros alexa_reco_ros.launch
+```
+
+Note: Republishing the image topic may be necessary with something like this
+```sh
+rosrun image_transport republish compressed in:=/down/pointgrey_image raw out:=/down/pointgrey_0/image
+```
